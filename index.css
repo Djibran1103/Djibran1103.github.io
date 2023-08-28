@@ -270,6 +270,9 @@ a:hover {
     display: flex;
     margin-top: 500px;
   }
+  .aside-content {
+    display: none;
+  }
   .footer {
     display: none;
   }
@@ -318,7 +321,7 @@ a:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .container .card .imgBx {
     display: none;
   }
