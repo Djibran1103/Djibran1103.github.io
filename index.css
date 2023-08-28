@@ -215,7 +215,7 @@ a:hover{
         font-size: 16px;
     }
 }
-@media (max-width: 858px){
+@media (max-width: 600px){
     nav div img{
         display: block;
         width: 100%;
