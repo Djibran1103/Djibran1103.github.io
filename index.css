@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; 
+}
+body{
+    font-family: montserrat;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(22, 34, 74);
+}
+
+nav{
+    background: #3c5187;
+    height : 80px;
+    width : 100%;
+    box-shadow: 5px 1px 40px rgba(0, 0, 0, 15);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: -80px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+}
+a:hover{
+    color: rgb(183, 183, 255);
+    transition: .5s;
+
+}
+
+.judul{
+    margin-left: 50px;
+    margin-top: 50px;
+    color: azure;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-items: left;
+    align-items: left;
+    flex-wrap: wrap;
+    margin: top 20px;
+    gap: 100px 50px;
+    padding: 40px 50px;
+}
+
+.container .card {
+    position:relative;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 1200px;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 15);
+    transition: 0.5s;
+}
+
+.container .card:hover{
+    height: 320px;
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 300px;
+    height: 220px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+    height: 250px;
+}
+
+.container .card .imgBx img {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content{
+    position: absolute;
+    top: 30px;
+    width: 70%;
+    right: 30px;
+    padding: 0 30px;
+    height: 35px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.container .card .content .button {
+    display: inline-block;
+    background-color: #3bc07b;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.container .card .content .button:hover {
+    background-color: #96fca6;
+}
+
+@media (max-width: 1250px){
+    .container .card {
+        height: 380px;
+    }
+    .container .card:hover {
+        height: 400px;
+    }
+    .container .card .content{
+        right: 200px;
+    }
+    .container .card .imgBx{
+        display: none;
+    }
+}
+
+.aside-content {
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 15%;
+    border-radius: 20px;
+    position: absolute;
+    top: 210px;
+    right: 310px;
+    height: 500px;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: rgb(47, 47, 47);
+}
+
+.footer .social {
+    text-align: center;
+    color: white;
+}
+
+.footer .social a {
+    font-size: 24px;
+    color: inherit;
+}
+.footer .social a:hover {
+    color: rgb(183, 183, 255);
+    transition: .5s;
+}
+.footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: azure;
+}
+
+.aside-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.aside-content a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (max-width: 952px){
+    .logo .label{
+        font-size: 30px;
+        padding-left:50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    nav div img{
+        display: block;
+        width: 100%;
+    }
+    nav ul{
+        position: absolute;
+        margin: 50px 0;
+        width: 100%;
+        height: 100%;
+        background: #555dcb;
+        top: 30px;
+        left: 0;
+        margin-bottom: 0px;
+        text-align: center;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 15);
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    .container .card {
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .footer .social{
+        display: none;
+    }
+    .footer .copyright{
+        display: none;
+    }
+    .aside-content{
+        display: none;
+    }
+}
+
+@media (max-width: 1900px){ 
+    .aside-content{
+        left: 1300px;
+    }
+}
+
+@media (max-width: 1550px){
+    .aside-content{
+        height: 600px;
+        transition: 0.5s;
+    }
+}
