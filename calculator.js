@@ -13,3 +13,23 @@ function calculateResult() {
         document.getElementById("display").value = "Error";
     }
 }
+
+function inverse() {
+    let display = document.getElementById("display");
+    display.value = 1 / parseFloat(display.value);
+  }
+  
+function square() {
+    let display = document.getElementById("display");
+    display.value = parseFloat(display.value) ** 2;
+  }
+  
+function squareRoot() {
+    let display = document.getElementById("display");
+    display.value = Math.sqrt(parseFloat(display.value));
+  }
+function percentage() {
+    let display = document.getElementById("display");
+    display.value = parseFloat(display.value) / 100;
+  }
+    
