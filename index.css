@@ -5,8 +5,9 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 body {
-  font-family: montserrat;
+  font-family: Montserrat;
   align-items: center;
   min-height: 100vh;
   background-color: rgb(22, 34, 74);
@@ -17,10 +18,6 @@ nav {
   height: 80px;
   width: 100%;
   box-shadow: 5px 1px 40px rgba(0, 0, 0, 15);
-}
-
-input {
-  display: none;
 }
 
 .logo {
@@ -48,8 +45,8 @@ input {
   color: white;
   cursor: pointer;
   position: absolute;
-  top: 5px; /* Adjust the top position */
-  right: 20px; /* Adjust the right position */
+  top: 5px;
+  right: 20px;
   display: none;
 }
 
@@ -79,15 +76,18 @@ nav ul {
   margin-right: 20px;
   margin-top: -80px;
 }
+
 nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
 }
+
 nav ul li a {
   color: white;
   font-size: 17px;
 }
+
 a:hover {
   color: rgb(183, 183, 255);
   transition: 0.5s;
@@ -225,10 +225,12 @@ a:hover {
   font-size: 24px;
   color: inherit;
 }
+
 .footer .social a:hover {
   color: rgb(183, 183, 255);
   transition: 0.5s;
 }
+
 .footer .copyright {
   text-align: center;
   margin-top: 20px;
@@ -322,4 +324,87 @@ a:hover {
   .container .card .imgBx {
     display: none;
   }
+  .calculator {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  #display {
+    margin-bottom: 10px;
+  }
+
+  .calculator .calbuttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.calculator {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 200px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+}
+
+.calculator {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  text-align: right;
+}
+
+#display {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.calbuttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.calculator button {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  background-color: #4c86af;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  background-color: #42ecff;
+}
+
+.calculator button.clear {
+  background-color: #ff5722;
+}
+
+.calculator button.clear:hover {
+  background-color: #f44336;
 }

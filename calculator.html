@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="logo1.png" alt="Sanjaya Group Logo" />
+      <label class="logo-text">Sanjaya Group</label>
+    </div>
+    <input type="checkbox" id="menu-toggle" />
+    <ul class="menu">
+      <li><a class="active" href="calculator.html">Kalkulator</a></li>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li>
+        <a
+          href="https://www.nesabamedia.com/lists/rekomendasi-monitor-gaming-1-jutaan-terbaik/"
+          >About</a
+        >
+      </li>
+      <li><a href="https://www.instagram.com/jebe.11_/">Services</a></li>
+      <li><a href="https://wa.me/6282150667710">Contact</a></li>
+    </ul>
+    <label class="menu-toggle" for="menu-toggle">&#9776;</label>
+  </nav>
+    <div class="calculator">
+        <input type="text" id="display" value="" readonly>
+        <div class="calbuttons">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="calculateResult()">=</button>
+            <button onclick="appendToDisplay('/')">/</button>
+        </div>
+    </div>
+    <section class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/jebe.11_/"> Instagram </a>
+        <a
+          href="https://www.linkedin.com/in/ramadhan-djibran-sanjaya-35baa2178/"
+        >
+          LinkedIn
+        </a>
+        <a href="tiktok.com/@djib.11_?lang=id-ID"> Tiktok </a>
+        <a href="https://wa.me/6282150667710"> Whatsapp </a>
+      </div>
+      <h5 class="copyright">Djibran_1170 @ 2023</h5>
+    </section>
+    <script src="calculator.js"></script>
+</body>
+</html>
