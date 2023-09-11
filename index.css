@@ -365,8 +365,8 @@ a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   width: 350px;
   padding: 20px;
-  margin-top: 50px;
-  margin-bottom: 190px;
+  margin-top: 30px;
+  margin-bottom: 140px;
   text-align: right;
 }
 
@@ -407,4 +407,11 @@ a:hover {
 
 .calculator button.clear:hover {
   background-color: #f44336;
+}
+
+.judkal{
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  font-size: xx-large;
 }
